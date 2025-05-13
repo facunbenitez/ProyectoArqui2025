@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.8.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+<project source="3.9.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
@@ -101,6 +101,12 @@
     <comp lib="0" loc="(160,490)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="E"/>
+    </comp>
+    <comp lib="0" loc="(900,160)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="f1"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="1" loc="(280,360)" name="NOT Gate"/>
     <comp lib="1" loc="(280,400)" name="NOT Gate"/>
@@ -338,6 +344,8 @@
     <wire from="(640,250)" to="(640,320)"/>
     <wire from="(640,250)" to="(710,250)"/>
     <wire from="(760,230)" to="(800,230)"/>
+    <wire from="(800,160)" to="(800,230)"/>
+    <wire from="(800,160)" to="(900,160)"/>
     <wire from="(800,230)" to="(800,390)"/>
     <wire from="(800,390)" to="(940,390)"/>
     <wire from="(800,430)" to="(800,810)"/>

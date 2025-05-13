@@ -1,0 +1,163 @@
+\documentclass [15pt,a4paper,twoside]{article}
+\usepackage[spanish,shorthands=off]{babel}        % shorhands=off is required for babel french in combination with tikz karnaugh....
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{verbose,a4paper, tmargin=3.5cm,bmargin=3.5cm,lmargin=2.5cm,rmargin=2.5cm,headsep=1cm,footskip=1.5cm}
+\usepackage{fancyhdr}
+\usepackage{colortbl}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz -timing}
+\usepackage{tikz}
+\usetikzlibrary{karnaugh}
+\pagestyle{fancy}
+
+\definecolor{LogisimKMapColor0}{RGB}{128,0,0}
+\definecolor{LogisimKMapColor1}{RGB}{230,25,75}
+\definecolor{LogisimKMapColor2}{RGB}{250,190,190}
+\definecolor{LogisimKMapColor3}{RGB}{170,110,40}
+\definecolor{LogisimKMapColor4}{RGB}{245,130,48}
+\definecolor{LogisimKMapColor5}{RGB}{255,215,180}
+\definecolor{LogisimKMapColor6}{RGB}{128,128,0}
+\definecolor{LogisimKMapColor7}{RGB}{255,255,25}
+\definecolor{LogisimKMapColor8}{RGB}{210,245,60}
+\definecolor{LogisimKMapColor9}{RGB}{0,0,128}
+\definecolor{LogisimKMapColor10}{RGB}{145,30,180}
+\definecolor{LogisimKMapColor11}{RGB}{60,180,175}
+\definecolor{LogisimKMapColor12}{RGB}{0,130,203}
+\definecolor{LogisimKMapColor13}{RGB}{230,190,255}
+\definecolor{LogisimKMapColor14}{RGB}{170,255,195}
+\definecolor{LogisimKMapColor15}{RGB}{240,50,230}
+
+\fancyhead{}
+\fancyhead[C] {Documento generado por Logisim-evolution en Tue May 13 10:49:43 ART 2025}
+\fancyfoot[C] {\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\makeatother
+
+\begin{document}
+\section{Introducción}
+Este documento fue generado por logisim-evolution. Cualquier parte de las fuentes TeX puede ser utilizada en sus propios documentos sin ningún problema. En caso de que desee utilizar todas/partes de estas fuentes TeX generadas, por favor (1) no olvide incluir los paquetes requeridos, y (2) incluya una observación de que esta fuente fue generada por logisim-evolution.
+%===============================================================================
+\section{Tabla de verdad}
+La tabla puede ser demasiado grande para ser mostrada en la página. En el momento de la generación no se realizó ningún cálculo sobre el tamaño de la tabla con respecto a la anchura/altura de la página.
+%-------------------------------------------------------------------------------
+\subsection{Tabla de verdad compactada}
+\begin{center}
+\begin{tabular}{cccc|c}
+$Z1$&$Z2$&$Z3$&$Z4$&$f1$\\
+\hline
+$-$&$0$&$0$&$0$&$1$\\
+$0$&$0$&$0$&$1$&$0$\\
+$0$&$-$&$1$&$-$&$0$\\
+$-$&$1$&$0$&$0$&$0$\\
+$0$&$1$&$0$&$1$&$1$\\
+$1$&$0$&$-$&$1$&$1$\\
+$1$&$-$&$1$&$0$&$0$\\
+$1$&$1$&$0$&$1$&$0$\\
+$1$&$1$&$1$&$1$&$1$\\
+
+\end{tabular}
+\end{center}
+%-------------------------------------------------------------------------------
+\subsection{Tabla de la verdad completa}
+\begin{center}
+\begin{tabular}{cccc|c}
+$Z1$&$Z2$&$Z3$&$Z4$&$f1$\\
+\hline
+$0$&$0$&$0$&$0$&$1$\\
+$0$&$0$&$0$&$1$&$0$\\
+$0$&$0$&$1$&$0$&$0$\\
+$0$&$0$&$1$&$1$&$0$\\
+$0$&$1$&$0$&$0$&$0$\\
+$0$&$1$&$0$&$1$&$1$\\
+$0$&$1$&$1$&$0$&$0$\\
+$0$&$1$&$1$&$1$&$0$\\
+$1$&$0$&$0$&$0$&$1$\\
+$1$&$0$&$0$&$1$&$1$\\
+$1$&$0$&$1$&$0$&$0$\\
+$1$&$0$&$1$&$1$&$1$\\
+$1$&$1$&$0$&$0$&$0$\\
+$1$&$1$&$0$&$1$&$0$\\
+$1$&$1$&$1$&$0$&$0$\\
+$1$&$1$&$1$&$1$&$1$\\
+
+\end{tabular}
+\end{center}
+%===============================================================================
+\section{Diagramas de Karnaugh}
+Esta sección muestra varias versiones de los diagramas de Karnaugh de las funciones dadas.
+%-------------------------------------------------------------------------------
+\subsection{Diagramas de Karnaugh vacíos}
+\begin{center}
+\begin{tikzpicture}[karnaugh,disable bars,x=1\kmunitlength,y=1\kmunitlength,kmbar left sep=1\kmunitlength,grp/.style n args={4}{#1,fill=#1!30,minimum width= #2\kmunitlength,minimum height=#3\kmunitlength,rounded corners=0.2\kmunitlength,fill opacity=0.6,rectangle,draw}]
+\karnaughmap{4}{$f1$}{{$Z1$}{$Z3$}{$Z2$}{$Z4$}}{}{
+\draw[kmbox] (-0.5,4.5)
+   node[below left]{$Z1$, $Z2$}
+   node[above right]{$Z3$, $Z4$} +(-0.2,0.2)
+   node[above left]{$f1$};\draw (0,4) -- (-0.7,4.7);
+\foreach \x/\1 in %
+{0/00,1/01,2/11,3/10} {
+   \node at (\x+0.5,4.2) {\1};
+}
+\foreach \y/\1 in %
+{0/00,1/01,2/11,3/10} {
+   \node at (-0.4,-0.5-\y+4) {\1};
+}
+}
+\end{tikzpicture}
+\end{center}
+%-------------------------------------------------------------------------------
+\subsection{Rellenado de los diagramas de Karnaugh}
+\begin{center}
+\begin{tikzpicture}[karnaugh,disable bars,x=1\kmunitlength,y=1\kmunitlength,kmbar left sep=1\kmunitlength,grp/.style n args={4}{#1,fill=#1!30,minimum width= #2\kmunitlength,minimum height=#3\kmunitlength,rounded corners=0.2\kmunitlength,fill opacity=0.6,rectangle,draw}]
+\karnaughmap{4}{$f1$}{{$Z1$}{$Z3$}{$Z2$}{$Z4$}}
+{1001000011000101}{
+\draw[kmbox] (-0.5,4.5)
+   node[below left]{$Z1$, $Z2$}
+   node[above right]{$Z3$, $Z4$} +(-0.2,0.2)
+   node[above left]{$f1$};\draw (0,4) -- (-0.7,4.7);
+\foreach \x/\1 in %
+{0/00,1/01,2/11,3/10} {
+   \node at (\x+0.5,4.2) {\1};
+}
+\foreach \y/\1 in %
+{0/00,1/01,2/11,3/10} {
+   \node at (-0.4,-0.5-\y+4) {\1};
+}
+}
+\end{tikzpicture}
+\end{center}
+%-------------------------------------------------------------------------------
+\subsection{Relleno de diagramas de Karnaugh con tapas}
+\begin{center}
+\begin{tikzpicture}[karnaugh,disable bars,x=1\kmunitlength,y=1\kmunitlength,kmbar left sep=1\kmunitlength,grp/.style n args={4}{#1,fill=#1!30,minimum width= #2\kmunitlength,minimum height=#3\kmunitlength,rounded corners=0.2\kmunitlength,fill opacity=0.6,rectangle,draw}]
+\karnaughmap{4}{$f1$}{{$Z1$}{$Z3$}{$Z2$}{$Z4$}}
+{1001000011000101}{
+\draw[kmbox] (-0.5,4.5)
+   node[below left]{$Z1$, $Z2$}
+   node[above right]{$Z3$, $Z4$} +(-0.2,0.2)
+   node[above left]{$f1$};\draw (0,4) -- (-0.7,4.7);
+\foreach \x/\1 in %
+{0/00,1/01,2/11,3/10} {
+   \node at (\x+0.5,4.2) {\1};
+}
+\foreach \y/\1 in %
+{0/00,1/01,2/11,3/10} {
+   \node at (-0.4,-0.5-\y+4) {\1};
+}
+   \node[grp={LogisimKMapColor0}{0.8}{0.8}](n0) at(0.5,3.5) {};
+   \node[grp={LogisimKMapColor0}{0.8}{0.8}](n1) at(0.5,0.5) {};
+   \node[grp={LogisimKMapColor1}{0.8}{0.8}](n2) at(1.5,2.5) {};
+   \node[grp={LogisimKMapColor2}{0.8}{1.8}](n3) at(2.5,1) {};
+   \node[grp={LogisimKMapColor3}{1.8}{0.8}](n4) at(1,0.5) {};
+}
+\end{tikzpicture}
+\end{center}
+%===============================================================================
+\section{Expresiones mínimas}
+$f1 =  \overline{Z2}  \cdot  \overline{Z3}  \cdot  \overline{Z4} + \overline{Z1}  \cdot Z2 \cdot  \overline{Z3}  \cdot Z4+Z1 \cdot Z3 \cdot Z4+Z1 \cdot  \overline{Z2}  \cdot  \overline{Z3} $~\\
+\end{document}
