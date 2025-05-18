@@ -606,6 +606,7 @@
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Z3"/>
     </comp>
+    <comp lib="0" loc="(570,340)" name="Constant"/>
     <comp lib="0" loc="(570,370)" name="Clock"/>
     <comp lib="0" loc="(920,440)" name="Splitter">
       <a name="facing" val="south"/>
@@ -645,10 +646,10 @@
       <a name="appearance" val="logisim_evolution"/>
       <a name="ongoal" val="stay"/>
     </comp>
-    <comp lib="8" loc="(1060,328)" name="Text">
+    <comp lib="8" loc="(1060,325)" name="Text">
       <a name="text" val="Estado Actual"/>
     </comp>
-    <comp lib="8" loc="(503,600)" name="Text">
+    <comp lib="8" loc="(500,600)" name="Text">
       <a name="text" val="Estado + 3"/>
     </comp>
     <comp loc="(610,500)" name="SUMLAT">
@@ -709,6 +710,7 @@
     <wire from="(540,70)" to="(550,70)"/>
     <wire from="(550,60)" to="(550,70)"/>
     <wire from="(550,60)" to="(660,60)"/>
+    <wire from="(570,340)" to="(680,340)"/>
     <wire from="(570,370)" to="(680,370)"/>
     <wire from="(570,80)" to="(570,100)"/>
     <wire from="(570,80)" to="(660,80)"/>
