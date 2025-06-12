@@ -869,7 +869,7 @@
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 4 1
 1 4*0 1 0 0 1 1 0
-1 1 1 0 1
+1 1 0 1 1
 </a>
       <a name="dataWidth" val="1"/>
     </comp>
